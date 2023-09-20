@@ -1,0 +1,118 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.576);
+}
+.card h2{
+    color: #201717;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.card p{
+    color: #000000;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2rem;
+    text-align: left;
+
+}
+.card img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    align-self: flex-end;
+    border-radius: 40%;
+}
+.group--cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-auto-flow: column;
+}
+.first--card{
+    grid-area: 1 / 3 / 3 / 5;
+    border-top: solid 5px #f70b0b;
+}
+.second--card{
+    grid-area: 2 / 5 / 4 / 7;
+    border-top: solid 5px #0004ffa3;
+
+}
+.third--card{
+    grid-area: 3 / 3 / 5 / 5;
+    border-top: solid 5px #ccee0a;
+
+}
+.fourth--card{
+    grid-area: 2 / 1 / 4 / 3;
+    border-top: solid 5px #1b6ec29a;
+
+}
+
+@media (max-width: 768px){
+    .group--cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 20rem;
+        height: 15rem;
+    }
+    .first--card{
+        margin-left: 15rem;
+    }
+    .third--card{
+        margin-left: 15rem;
+    
+    }   
+}
+@media (max-width: 425px){
+    .group--cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 12rem;
+        height: 15rem;
+    }
+    .first--card{
+        margin-left: 5rem;
+    }
+    .third--card{
+        margin-left: 5rem;
+    
+    }   
+}
+
+
+
+
+/* Context from Code Snippet css/cards.css: */
+/*  */
+/* Context from Code Snippet css/section.css:.features__section{ */
+/* .features__section{ */
+/*     width: 80vw; */
+/*     height: 70vw; */
+/*     margin: 8rem auto 10rem auto ;  */
+/* } */
+/* Context from Code Snippet index.html:<body> */
+/* <body> */
+/*  */
+/*         <!--        Four Card Feature--> */
+/*     <section class="features__section"> */
+/*         <div class="title"> */
+/*             <h1>Realiable, efficient delivery</h1> */
+/*             <h2>Powered by Techonology</h2> */
+/*             <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p> */
+/*         </div> */
+/*          */
+/*         <!--        First CARD--> */
+/*         <div class="card first--card"> */
+/*             <h2
